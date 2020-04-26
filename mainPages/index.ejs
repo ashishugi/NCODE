@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NCODE</title>
+    <style>
+        /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+        .container{
+            height: 100%;
+            width: 100%;
+        }
+        .heading{
+            margin-top: 40px;
+            font-weight: 600;
+            font-family: inherit;
+            font-size: 60px;    
+        }
+        .courses{
+            font-size:20px;
+            color: rgb(214, 39, 68);
+            font-family: inherit;
+            font-weight: 800;
+        }
+        .courses-bg{
+            padding:3px;
+            color: rgb(172, 73, 89);
+            border-radius: 25px;
+            background-color: pink;
+        }
+        .btn{
+            /* background-image: linear-gradient(to right,rgb(21, 88, 149), rgb(10, 119, 184)); */
+            background-image: linear-gradient(to right,rgb(196, 118, 28), rgb(192, 147, 24));
+            font-family: Muli,sans-serif;
+            display: inline-block;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 18px 10px;
+            min-width: 320px;
+            border-radius: 6px;
+            color:#fff;
+            cursor: pointer;
+            outline: none;
+            margin:5px;
+        }
+        .next-heading{
+            font-weight: 400;
+            font-family: 'Aldrich';
+        }
+    </style>
+</head>
+<body>
+    <%- include('navMain') %>
+    <div class="container">
+        <div class="row" >
+            <div class="col-sm-12 col-md-6  courses-bg">
+                    <span class="courses">Competitive Programming</span>
+                    &nbsp;and&nbsp;
+                    <span class="courses"> C++ Courses </span>
+                    will be out soon!
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                    <h1 class="heading">
+                            LEARN.EXPLORE.<br>CODE.
+                    </h1>
+                    <br>
+                    <br>
+                    <h4 class="next-heading">Sharp your Coding Skills with Us!</h4>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="row ">
+                    <img src="images/computer.png" style="width:100%;height:100%;">
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                   <a href="/problems"><button class="btn btn-primary">Explore Problems</button></a>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <a href="/blogs"><button class="btn btn-primary">BLOGS</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('footer') %>
+</body>
+</html>
