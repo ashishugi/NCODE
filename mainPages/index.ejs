@@ -33,8 +33,16 @@
         .heading{
             margin-top: 40px;
             font-weight: 600;
+            text-transform: uppercase;
             font-family: inherit;
             font-size: 60px;    
+        }
+        .courses-heading{
+            margin-top: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: inherit;
+            font-size: 40px;    
         }
         .courses{
             font-size:20px;
@@ -71,6 +79,22 @@
             font-weight: 400;
             font-family: 'Aldrich';
         }
+        .card{
+            height:100%;
+            padding-top: 20px;
+            border-radius:1px;
+        }
+        .card:hover{
+            height:100%;
+            padding-top: 20px;
+            border-radius:1px;
+            box-shadow: 8px 8px 15px rgba(3, 19, 92, 0.4);
+        }
+        .card-body{
+            color: floralwhite;
+            font-family: 'Aldrich';font-size: 22px;
+        }
+        
     </style>
 </head>
 <body>
@@ -87,7 +111,19 @@
         <div class="row">
             <div class="col-sm-12 col-md-8">
                     <h1 class="heading">
-                            LEARN.EXPLORE.<br>CODE.
+                       <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                Learn.
+                            </div>
+                            <div class="col-sm-12-4">
+                                Explore.
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                Code.   
+                            </div>
+                        </div>
+                       </div>
                     </h1>
                     <br>
                     <br>
@@ -107,6 +143,56 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 courses-heading">
+                OUR Courses<br><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-3">
+               <a href="/courses">
+                    <div class="card" style="background-image: linear-gradient(#f6cf4b, #f1a017); height: 150px; text-align: center; margin:10px;">
+                            <div class="card-body ">
+                                Competitive Programming.
+                            </div>
+                    </div>
+               </a>
+            </div>
+            <br>
+            <div class="col-sm-12 col-md-3">
+                    <a href="/courses">
+                        <div class="card" style="background-image: linear-gradient(#6fddf7,#3d6bfd); background-color: blue; height: 150px; text-align: center;  margin:10px;">
+                            <div class="card-body">
+                               Data Structures with C++.
+                            </div>
+                        </div>
+                    </a>
+            </div>
+            <br>
+            <div class="col-sm-12 col-md-3">
+                <a href="/courses">
+                    <div class="card" style="background-image: linear-gradient(#8dea97  ,#459f45); height: 150px; text-align: center; margin:10px;">
+                        <div class="card-body">
+                            Data Structures with Python.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <div class="col-sm-12 col-md-3" >
+                    <a href="/courses">
+                        <div class="card" style=" background-image: linear-gradient(to right,rgb(21, 88, 149), rgb(10, 119, 184)); height: 150px; text-align: center;  margin:10px;">
+                            <div class="card-body">
+                                       Full Stack Web Development with Node JS.
+                            </div>
+                        </div>
+                    </a>
+            </div>
+            <br>
+        </div>
+
     </div>
     <%- include('footer') %>
 </body>
