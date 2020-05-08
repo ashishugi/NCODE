@@ -4,98 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/index.css' />
     <title>NCODE</title>
-    <style>
-        /* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-        .container{
-            height: 100%;
-            width: 100%;
-        }
-        .heading{
-            margin-top: 40px;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-family: inherit;
-            font-size: 60px;    
-        }
-        .courses-heading{
-            margin-top: 40px;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-family: inherit;
-            font-size: 40px;    
-        }
-        .courses{
-            font-size:20px;
-            color: rgb(214, 39, 68);
-            font-family: inherit;
-            font-weight: 800;
-        }
-        .courses-bg{
-            padding:3px;
-            color: rgb(172, 73, 89);
-            border-radius: 25px;
-            background-color: pink;
-        }
-        .btn{
-            /* background-image: linear-gradient(to right,rgb(21, 88, 149), rgb(10, 119, 184)); */
-            background-image: linear-gradient(to right,rgb(196, 118, 28), rgb(192, 147, 24));
-            font-family: Muli,sans-serif;
-            display: inline-block;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 23px;
-            text-align: center;
-            text-transform: uppercase;
-            padding: 18px 10px;
-            min-width: 320px;
-            border-radius: 6px;
-            color:#fff;
-            cursor: pointer;
-            outline: none;
-            margin:5px;
-        }
-        .next-heading{
-            font-weight: 400;
-            font-family: 'Aldrich';
-        }
-        .card{
-            height:100%;
-            padding-top: 20px;
-            border-radius:1px;
-        }
-        .card:hover{
-            height:100%;
-            padding-top: 20px;
-            border-radius:1px;
-            box-shadow: 8px 8px 15px rgba(3, 19, 92, 0.4);
-        }
-        .card-body{
-            color: floralwhite;
-            font-family: 'Aldrich';font-size: 22px;
-        }
-        
-    </style>
 </head>
 <body>
     <%- include('navMain') %>
@@ -135,65 +46,118 @@
                 </div>
             </div>  
             <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6 mainButtonLargeScreen">
                    <a href="/problems"><button class="btn btn-primary">Explore Problems</button></a>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6 mainButtonLargeScreen">
                     <a href="/blogs"><button class="btn btn-primary">BLOGS</button></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-12 courses-heading">
-                OUR Courses<br><br>
+            <div class="col-sm-12 col-md-6 mainButtonSmallScreen ">
+                        <a href="/problems"><button class="btn btn-primary">Explore Problems</button></a>
+            </div>
+            <div class="col-sm-12 col-md-6 mainButtonSmallScreen ">
+                         <a href="/blogs"><button class="btn btn-primary">BLOGS</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Courses DIVISION -->
+    <div class="container">
+        <div class="row" >
+            <div class="col-sm-12 col-md-12 courses-heading" >
+                OUR Courses .<br><br>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-3">
-               <a href="/courses">
-                    <div class="card" style="background-image: linear-gradient(#f6cf4b, #f1a017); height: 150px; text-align: center; margin:10px;">
-                            <div class="card-body ">
-                                Competitive Programming.
-                            </div>
-                    </div>
-               </a>
+            <div class="col-sm-12 col-md-5">
+                <img class="courseImage1"  src="images/courseImage1.png" alt="Coding Image">
             </div>
-            <br>
-            <div class="col-sm-12 col-md-3">
+           <div class="col-sm-12 col-md-7">
+                
+            <div class="row">
+                <div class="col-sm-12 col-md-6"  >
                     <a href="/courses">
-                        <div class="card" style="background-image: linear-gradient(#6fddf7,#3d6bfd); background-color: blue; height: 150px; text-align: center;  margin:10px;">
-                            <div class="card-body">
-                               Data Structures with C++.
-                            </div>
+                        <div class="card" style="background-image: linear-gradient(#f6cf4b, #f1a017); height: 150px; text-align: center; margin:10px;">
+                                <div class="card-body ">
+                                 Competitive Programming.
+                                </div>
                         </div>
                     </a>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                        <a href="/courses">
+                            <div class="card" style="background-image: linear-gradient(#6fddf7,#3d6bfd); background-color: blue; height: 150px; text-align: center;  margin:10px;">
+                                <div class="card-body">
+                                Data Structures with C++.
+                                 </div>
+                            </div>
+                        </a>
+                </div>
             </div>
-            <br>
-            <div class="col-sm-12 col-md-3">
-                <a href="/courses">
-                    <div class="card" style="background-image: linear-gradient(#8dea97  ,#459f45); height: 150px; text-align: center; margin:10px;">
-                        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <a href="/courses">
+                        <div class="card" style="background-image: linear-gradient(#8dea97  ,#459f45); height: 150px; text-align: center; margin:10px;">
+                            <div class="card-body">
                             Data Structures with Python.
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <br>
-            <div class="col-sm-12 col-md-3" >
-                    <a href="/courses">
-                        <div class="card" style=" background-image: linear-gradient(to right,rgb(21, 88, 149), rgb(10, 119, 184)); height: 150px; text-align: center;  margin:10px;">
-                            <div class="card-body">
-                                       Full Stack Web Development with Node JS.
                             </div>
                         </div>
                     </a>
+                </div>
+                <div class="col-sm-12 col-md-6" >
+                        <a href="/courses">
+                            <div class="card" style=" background-image: linear-gradient(to right,rgb(21, 88, 149), rgb(10, 119, 184)); height: 150px; text-align: center;  margin:10px;">
+                                <div class="card-body">
+                                       Full Stack Web Development with Node JS.
+                                </div>
+                         </div>
+                        </a>
+                </div>
+           
+            </div>  
+           </div>
+        </div>
+    </div>
+    <div class="container" >
+       <div class="col-sm-12 col-md-12 courses-heading">
+            Join Us.
+       </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                    <p class="joinus">
+                        
+                        <br>We are working hard to make the Education and Technology more easy and more accessible for
+                        the people .
+                       We are trying to make easy teaching methodology by which a student can easily understand the 
+                       concepts and can grasp more things in a small amount of time . 
+                     
+                    </p>
             </div>
-            <br>
+            <div class="col-sm-12 col-md-5" style="float:top;" >
+                    <!-- position: relative; bottom:300px;left:10px; -->
+                        <img class="courseImage2" src="images/courseImage2.png" alt="Coding Image 2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <p class="joinus">
+                    <br>
+                        Our Main focus is on the Computer Science and the recent Computer Technologies . Here the student can add
+                        many skills into his skill set .So <strong>Join</strong> our community .
+                </p>
+                
+            </div>
         </div>
 
     </div>
+    <!-- Start of Content Below the courses Panel    -->
     <%- include('footer') %>
 </body>
 </html>
